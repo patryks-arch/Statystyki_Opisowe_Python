@@ -1,0 +1,26 @@
+Patryk Stec, Zakres pracy: Wykonanie kodu źródłowego, przygotowanie pliku danych, testy integracyjne oraz dokumentacja.
+
+ZADANIE 10 - STATYSTYKI OPISOWE (Aplikacja Stat4U)
+
+1. WYMAGANA STRUKTURA DANYCH WEJŚCIOWYCH:
+Program ładuje dane z pliku Excela o nazwie: P2Tem10_dane.xlsx
+Plik musi znajdować się w tym samym katalogu co skrypt uruchomieniowy.
+Wymagana struktura arkusza:
+- Pierwsza kolumna (A1) musi posiadać nagłówek o nazwie: Wartosci
+- Pod nagłówkiem (wiersze A2, A3, itd.) należy umieścić słupkiem dane liczbowe przeznaczone do analizy.
+
+2. ZACZYTYWANIE DANYCH WEJŚCIOWYCH:
+Dane są automatycznie wczytywane przy pomocy biblioteki 'pandas' (funkcja pd.read_excel). Program posiada wbudowany mechanizm odporności na błędy: automatycznie ignoruje puste rekordy oraz konwertuje wartości tekstowe na liczbowe (metoda pd.to_numeric z parametrem errors='coerce').
+
+3. OMÓWIENIE ALGORYTMU:
+Po poprawnym załadowaniu wektora danych, program wyznacza cztery główne statystyki opisowe przy użyciu zoptymalizowanych metod pakietu pandas:
+- Średnia arytmetyczna (metoda .mean())
+- Mediana / wartość środkowa (metoda .median())
+- Odchylenie standardowe próbkowe (metoda .std())
+- Rozstęp danych (wyliczany jako różnica .max() - .min())
+
+4. PRODUKCJA WYNIKÓW:
+Wyniki formatowane są do czytelnego raportu tekstowego z dokładnością do 4 miejsc po przecinku. Raport jest przekazywany bezpośrednio do interfejsu graficznego (GUI) przygotowanego przez prowadzącego za pomocą funkcji eXecute(win, Mlabel).
+
+5. WYMAGANE BIBLIOTEKI:
+Wymagane moduły zostały wyszczególnione w pliku P2Tem10_requirements.txt (pandas, openpyxl).
