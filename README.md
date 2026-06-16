@@ -6,9 +6,6 @@ Aplikacja kliencka (moduł) napisana w języku Python, przeznaczona do automatyc
 - [Funkcje aplikacji](#-funkcje-aplikacji)
 - [Struktura danych wejściowych](#-struktura-danych-wejściowych)
 - [Wymagania systemowe](#-wymagania-systemowe)
-- [Instalacja i uruchomienie](#-instalacja-i-uruchomienie)
-- [Struktura plików projektu](#-struktura-plików-projektu)
-- [Autorzy](#-autorzy)
 
 ## 🚀 Funkcje aplikacji
 Moduł automatycznie przetwarza dane liczbowe i generuje sformatowany raport zawierający:
@@ -30,9 +27,3 @@ Do poprawnego działania aplikacji wymagany jest interpreter języka **Python w 
 - `pandas`
 - `openpyxl` (niezbędna do obsługi plików `.xlsx` przez pandas)
 
-## 🛠️ Instalacja i uruchomienie
-
-1. **Sklonuj repozytorium:**
-   ```bash
-   git clone [https://github.com/TWÓJ-LOGIN-GITHUB/NAZWA-REPOZYTORIUM.git](https://github.com/TWÓJ-LOGIN-GITHUB/NAZWA-REPOZYTORIUM.git)
-   cd NAZWA-REPOZYTORIUM
